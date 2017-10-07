@@ -5,7 +5,7 @@ import requests
 
 app = Flask(__name__)
 
-env_token = = os.environ.get('TEST_PAGE_TOKEN')
+env_token = os.environ.get('TEST_PAGE_TOKEN')
 access_token = env_token
 
 @app.route("/", methods=["GET"])
