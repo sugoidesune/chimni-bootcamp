@@ -5,8 +5,8 @@ import urlfetch
 
 app = Flask(__name__)
 
-access_token = 'EAAW895WLezkBAGisDrIsZBuazNgk2Ll8fnpjbtg1wXOrJu3aYyFVLrCg3ZABUD3S70vEZAWHsbeYR4lKSm8mrbIdkZAimsAo9FHEHkbZCZBW89Wy56mYWlDyTmD5bzQAFSscMNkBJxbH7KfaVGgCZAo5gIin0SQeBmLRvRzdIstSwZDZD'
-
+env_token = = os.environ.get('TEST_PAGE_TOKEN')
+access_token = env_token
 
 @app.route("/", methods=["GET"])
 def root():
